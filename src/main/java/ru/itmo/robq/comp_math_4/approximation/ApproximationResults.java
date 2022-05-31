@@ -15,7 +15,7 @@ public class ApproximationResults {
     @CsvBindByName(column = "deviation", required = true)
     private double deviation;
     @CsvBindByName(column = "correlation", required = true)
-    private double correlation;
+    private Double correlation;
     @CsvBindByName(column = "r2")
-    private Double r2;
+    private double r2;
 }

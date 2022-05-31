@@ -55,8 +55,8 @@ public class Polynomial2Approximation implements Approximation{
                 .builder()
                 .function(function)
                 .deviation(approximationAnalyzer.calculateDeviation(xValues, yValues, function))
-//                .r2(approximationAnalyzer.calculateR2(xValues, yValues, function))
-                .r2(null)
+                .r2(approximationAnalyzer.calculateR2(xValues, yValues, function))
+                .correlation(null)
                 .build();
 
     }

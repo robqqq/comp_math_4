@@ -32,8 +32,8 @@ public class ExponentialApproximation implements Approximation{
         exponentialFunction.setB(linearFunction.getA());
         results.setFunction(exponentialFunction);
         results.setDeviation(approximationAnalyzer.calculateDeviation(xValues, yValues, exponentialFunction));
-//        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, exponentialFunction));
-        results.setR2(null);
+        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, exponentialFunction));
+        results.setCorrelation(null);
         return results;
     }
 }

@@ -14,8 +14,8 @@ public class ApproximationAnalyzer {
         double lowerRight = 0;
         for (int i = 0; i < n; i++) {
             upper += Math.pow(yValues[i] - function.apply(xValues[i]), 2);
-            lowerLeft += Math.pow(function.apply(xValues[0]), 2);
-            lowerRight += function.apply(function.apply(xValues[0]));
+            lowerLeft += Math.pow(function.apply(xValues[i]), 2);
+            lowerRight += function.apply(xValues[i]);
         }
         double result = 1 - upper / (lowerLeft - Math.pow(lowerRight, 2) / n);
         if (Double.isNaN(result)) {

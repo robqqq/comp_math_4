@@ -37,8 +37,8 @@ public class PowerApproximation implements Approximation{
         powerFunction.setB(linearFunction.getA());
         results.setFunction(powerFunction);
         results.setDeviation(approximationAnalyzer.calculateDeviation(xValues, yValues, powerFunction));
-//        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, powerFunction));
-        results.setR2(null);
+        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, powerFunction));
+        results.setCorrelation(null);
         return results;
     }
 }

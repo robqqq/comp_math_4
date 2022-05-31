@@ -35,8 +35,8 @@ public class LogarithmicApproximation implements Approximation {
         logarithmicFunction.setB(linearFunction.getB());
         results.setFunction(logarithmicFunction);
         results.setDeviation(approximationAnalyzer.calculateDeviation(xValues, yValues, logarithmicFunction));
-//        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, logarithmicFunction));
-        results.setR2(null);
+        results.setR2(approximationAnalyzer.calculateR2(xValues, yValues, logarithmicFunction));
+        results.setCorrelation(null);
         return results;
     }
 }
